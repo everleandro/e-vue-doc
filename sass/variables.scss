@@ -1,0 +1,10 @@
+$colors: (
+  'primary': #f19933,
+  'secondary': #4c5f68,
+  'info': #2196f3,
+  'disabled': rgba(0, 0, 0, 0.38),
+  'warning': #fb8c00,
+  'success': #00dc82,
+  'error': #f44336,
+);
+@import '@ever.leandros91/e-vue/styles/override.scss';
