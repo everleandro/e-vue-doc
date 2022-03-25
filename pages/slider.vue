@@ -58,6 +58,7 @@ export default Vue.extend({
   data: () => ({
     disabled: false,
     selectedColor: 'info',
+    value: 10,
     colors: ['primary', 'secondary', 'info', 'warning', 'success', 'error'],
     thumbLabel: true,
     decimal: true,
