@@ -24,6 +24,7 @@
             v-model="falseValue"
             label="false value"
             outlined
+            @input="test"
           ></e-text-field>
           <e-text-field
             v-model="trueValue"
@@ -67,14 +68,19 @@ export default Vue.extend({
 
   data: () => ({
     state: 'normal',
-    falseValue: false,
+    falseValue: 'false',
     model: false,
     selectedColor: 'primary',
-    trueValue: true,
+    trueValue: 'true',
     label: 'label',
     colors: ['primary', 'secondary', 'warning', 'success'],
   }),
   mounted() {},
+  methods: {
+    test(evt: any): void {
+      console.log(evt)
+    },
+  },
 })
 </script>
 
