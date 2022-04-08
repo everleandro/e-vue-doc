@@ -32,10 +32,11 @@ export default {
     '@ever.leandros91/e-vue/dist/e-vue.css',
     '@mdi/font/css/materialdesignicons.css',
     '~sass/variables.scss',
+    'prismjs/themes/prism-tomorrow.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['plugins/e-vue'],
+  plugins: ['plugins/e-vue', 'plugins/prism'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
