@@ -21,7 +21,7 @@
             v-bind="{ [selectedSize]: true }"
           >
             <e-icon v-if="fab || icon">mdi mdi-account</e-icon>
-            <template v-else> Button </template>
+            <template v-else> Button</template>
           </e-button>
         </e-col>
         <e-col>
@@ -58,8 +58,31 @@
     </div>
     <div class="mt-4">
       <e-row no-gutters>
-        <e-col col="24" class="code-box-image">
-          <img src="~/assets/components/button.jpg" alt="" />
+        <e-col col="24">
+          <!-- prettier-ignore -->
+          <div v-prism="'language-css'">
+.example {
+  color : red
+}
+          </div>
+        </e-col>
+      </e-row>
+    </div>
+
+    <div class="mt-4">
+      <e-row no-gutters>
+        <e-col col="24">
+          <div v-prism>
+            <!-- prettier-ignore -->
+            <script type="prism-html-markup">
+<e-button
+  large
+  color="info"
+>
+  Button
+</e-button>
+            </script>
+          </div>
         </e-col>
       </e-row>
     </div>
@@ -71,7 +94,6 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'DefaultLayout',
-
   data: () => ({
     disabled: false,
     selectedColor: 'info',
@@ -93,7 +115,6 @@ export default Vue.extend({
     rounded: false,
     icon: false,
   }),
-  mounted() {},
 })
 </script>
 
