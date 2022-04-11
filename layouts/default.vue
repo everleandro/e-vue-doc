@@ -1,7 +1,8 @@
 <template>
   <e-app>
     <e-drawer v-model="val" nav>
-      <logo /><e-list>
+      <logo />
+      <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
         <e-list-item to="/buttons">Butons</e-list-item>
         <e-list-item to="/dialogs">Dialogs</e-list-item>
@@ -32,25 +33,57 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'DefaultLayout',
-  mounted() {},
   data: () => ({
     val: true,
     val2: false,
   }),
+  mounted() {},
 })
 </script>
 <style lang="scss">
 .e-app {
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100px;
     background: rgba(1, 60, 60, 0.05);
-    border: thin solid rgba(0, 0, 0, 0.12);
   }
-  .code-box-image {
-    background-color: rgb(40, 44, 53);
+  .e-bar.e-bar--depressed {
+    box-shadow: none;
+  }
+
+  .e-divider {
+    display: block;
+    flex: 1 1 0;
+    max-width: 100%;
+    height: 0;
+    max-height: 0;
+    border-width: thin 0 0 0;
+    transition: inherit;
+    border-color: rgba(0, 0, 0, 0.12);
+    &--vertical {
+      align-self: stretch;
+      border-width: 0 thin 0 0;
+      display: inline-flex;
+      height: inherit;
+      min-height: 100%;
+      max-height: 100%;
+      max-width: 0;
+      width: 0;
+      vertical-align: text-bottom;
+      margin: 0 -1px;
+      &.e-divider--inset {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
   }
 }
 </style>

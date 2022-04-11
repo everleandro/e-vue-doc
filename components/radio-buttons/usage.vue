@@ -6,7 +6,7 @@
       with v-radio-group. Using the v-model on the v-radio-group you can access
       the value of the selected radio button inside the group.
     </p>
-    <app-example-box>
+    <app-box>
       <!-- Diseño de juego a mostrar -->
       <template #default>
         <e-row>
@@ -22,23 +22,15 @@
           </e-col>
         </e-row>
       </template>
-      <!-- Códígo ejemplo de un fichero completo -->
-      <template #code>
-        <e-row>
-          <e-col col="24" md="12" lg="12" xl="12">
-            <h4>Códígo ejemplo de todo un fichero</h4>
-          </e-col>
-        </e-row>
-      </template>
       <!-- Fragmento de códígo con componente y sus props en cuestión -->
-      <template #example>
+      <template #code>
         <e-row>
           <e-col col="24" md="12" lg="12" xl="12">
             <h4>Fragmento de códígo con componente y sus props en cuestión</h4>
           </e-col>
         </e-row>
       </template>
-    </app-example-box>
+    </app-box>
   </e-container>
 </template>
 
