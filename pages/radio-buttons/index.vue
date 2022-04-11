@@ -7,6 +7,7 @@
       users to select from a predefined set of options.
     </p>
     <radio-buttons-usage />
+    <radio-buttons-colors />
   </div>
 </template>
 
