@@ -6,7 +6,7 @@
       with v-radio-group. Using the v-model on the v-radio-group you can access
       the value of the selected radio button inside the group.
     </p>
-    <app-example-box>
+    <app-box>
       <!-- Diseño de juego a mostrar -->
       <template #default>
         <e-row>
@@ -80,7 +80,7 @@ label="Radio 1"
           </script>
         </div>
       </template>
-    </app-example-box>
+    </app-box>
   </e-container>
 </template>
 
