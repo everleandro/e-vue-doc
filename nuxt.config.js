@@ -31,6 +31,8 @@ export default {
   css: [
     '@ever.leandros91/e-vue/dist/e-vue.css',
     '@mdi/font/css/materialdesignicons.css',
+    'prismjs/plugins/line-numbers/prism-line-numbers.css',
+    'prismjs/plugins/toolbar/prism-toolbar.css',
     '~sass/variables.scss',
     'prismjs/themes/prism-tomorrow.css',
   ],

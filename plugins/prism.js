@@ -1,11 +1,9 @@
 import Prism from 'prismjs'
-import linesNumbersJS from 'prismjs/plugins/line-numbers/prism-line-numbers'
-import linesNumbersCSS from 'prismjs/plugins/line-numbers/prism-line-numbers.css'
-import toolbarJS from 'prismjs/plugins/toolbar/prism-toolbar'
-import toolbarCSS from 'prismjs/plugins/toolbar/prism-toolbar.css'
-import btnCopyJS from 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard'
-
 import Vue from 'vue'
+require('prismjs/plugins/line-numbers/prism-line-numbers')
+require('prismjs/plugins/toolbar/prism-toolbar')
+require('prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard')
+
 Prism.manual = true
 
 const directive = {

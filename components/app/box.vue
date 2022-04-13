@@ -24,6 +24,9 @@
     <div class="code-box__body pa-4">
       <slot></slot>
     </div>
+    <div class="code-box__code">
+      <slot name="example"></slot>
+    </div>
   </div>
 </template>
 
