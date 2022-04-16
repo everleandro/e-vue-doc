@@ -1,6 +1,6 @@
 <template>
   <div class="button-page">
-    <h1 class="v-heading text-h3 text-sm-h3 mb-4">Buttons</h1>
+    <h1 class="">Buttons</h1>
     <p>
       The <code>e-btn</code> component replaces the standard html button with a
       material design theme and a multitude of options. Any color helper class
@@ -11,6 +11,10 @@
       <button-basic />
       <button-colors />
       <button-fab-size />
+      <e-col col="24">
+        <h2>Props</h2>
+      </e-col>
+      <button-api />
     </e-row>
   </div>
 </template>

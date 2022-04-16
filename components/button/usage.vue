@@ -3,8 +3,7 @@
     <app-box title="Example">
       <e-row no-gutters>
         <e-col
-          col="12"
-          md="12"
+          col="24"
           lg="12"
           class="d-flex justify-center align-center br-divider pa-4"
         >
@@ -24,7 +23,7 @@
           </e-button>
         </e-col>
         <hr class="e-divider e-divider--vertical" />
-        <e-col lg="6">
+        <e-col col="24" lg="6">
           <div class="pa-4">
             <e-select
               v-model="selectedColor"
@@ -41,7 +40,7 @@
           </div>
         </e-col>
         <hr class="e-divider e-divider--vertical" />
-        <e-col lg="6">
+        <e-col col="24" lg="6">
           <div class="pa-4">
             <e-checkbox v-model="disabled" dense label="disabled"></e-checkbox>
             <e-checkbox v-model="fab" dense label="fab"></e-checkbox>
@@ -60,8 +59,8 @@
       <template #code>
         <!-- prettier-ignore -->
         <div v-prism>&lt;template>
-         &lt;e-button> Button &lt;/e-button>
-         &lt;/template></div>
+  &lt;e-button> Button &lt;/e-button>
+&lt;/template></div>
       </template>
     </app-box>
   </e-col>

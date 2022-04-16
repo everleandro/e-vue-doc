@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'colors',
+  name: 'ButtonColors',
 }
 </script>
 

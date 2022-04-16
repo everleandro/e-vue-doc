@@ -1,5 +1,5 @@
 <template>
-  <e-col col="24" md="12">
+  <e-col col="24">
     <app-box title="Basic">
       <div class="d-flex flex-wrap align-center">
         <e-button color="primary" class="ma-2">Default</e-button>
@@ -24,11 +24,11 @@
   &lt;e-button rounded> Rounded &lt;/e-button>
 
   &lt;e-button fab>
-  &lt;e-icon>mdi mdi-account&lt;/e-icon>
+    &lt;e-icon>mdi mdi-account&lt;/e-icon>
   &lt;/e-button>
 
   &lt;e-button icon>
-  &lt;e-icon>mdi mdi-account&lt;/e-icon>
+    &lt;e-icon>mdi mdi-account&lt;/e-icon>
   &lt;/e-button>
 
   &lt;e-button depressed> Depressed &lt;/e-button>

@@ -8,11 +8,13 @@ Prism.manual = true
 
 const directive = {
   bind(el, binding) {
-    const className = binding.value?.class || binding.value || 'language-markup'
+    let className = binding.value?.class || binding.value || 'language-markup'
     const pre = document.createElement('pre')
     const code = document.createElement('code')
     pre.setAttribute('data-start', binding.value?.dataStart || '1')
-    code.classList.add(className, 'line-numbers')
+    if (!binding.value?.lineNumbers === false)
+      className = `${className} line-numbers`
+    code.classList.add(className)
     code.setAttribute('data-prismjs-copy', 'COPY')
     for (let i = 0; i < (el.childNodes || []).length; i++) {
       code.appendChild(el.childNodes[i].cloneNode(true))

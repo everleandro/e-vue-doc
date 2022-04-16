@@ -55,6 +55,7 @@ export default Vue.extend({
     font-size: 14px;
   }
   &__header-content {
+    color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-grow: 1;
     align-items: center;
