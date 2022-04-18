@@ -1,0 +1,66 @@
+@use 'sass:map';
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: thin solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  & > tbody > tr:not(:last-child) > td:last-child,
+  & > tbody > tr:not(:last-child) > td,
+  & > tbody > tr:not(:last-child) > th:last-child,
+  & > tbody > tr:not(:last-child) > th,
+  & > thead > tr:last-child > th {
+    border-bottom: thin solid rgba(0, 0, 0, 0.12);
+  }
+  tr {
+    color: #4c5f68;
+    &:hover {
+      background-color: rgba(150, 150, 150, 0.1);
+      transition: background-color 100ms;
+    }
+  }
+  margin-bottom: 48px;
+  th {
+    text-align: left;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.6);
+    user-select: none;
+    font-size: 0.75rem;
+    height: 48px;
+  }
+  td {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 8px 16px !important;
+  }
+  &.api-table {
+    tbody tr {
+      & > td:first-child {
+        color: #f19933;
+        font-weight: bold;
+      }
+    }
+  }
+  &.sass-table {
+    tbody tr {
+      color: #4c5f68;
+      & > td:first-child {
+        color: #f19933;
+        font-weight: bold;
+      }
+      & > td:nth-child(3) {
+        color: #2196f3;
+      }
+    }
+  }
+}
+code.code-line,
+p > code {
+  color: #1a202c;
+  font-weight: 400;
+  font-size: 0.875em;
+  background-color: #f7fafc;
+  padding: 0.25rem;
+  border-width: 1px;
+  border-color: #edf2f7;
+  border-radius: 0.25rem;
+  border-style: solid;
+}

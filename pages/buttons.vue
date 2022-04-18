@@ -15,6 +15,10 @@
         <h2>Props</h2>
       </e-col>
       <button-api />
+      <e-col col="24">
+        <h2>SASS Variables</h2>
+      </e-col>
+      <button-sass />
     </e-row>
   </div>
 </template>

@@ -130,15 +130,6 @@ export default Vue.extend({
   pre {
     border-radius: 5px;
   }
-  code.code-line {
-    color: #1a202c;
-    font-weight: 400;
-    font-size: 0.875em;
-    background-color: #f7fafc;
-    padding: 0.25rem;
-    border-width: 1px;
-    border-color: #edf2f7;
-    border-radius: 0.25rem;
-  }
+
 }
 </style>

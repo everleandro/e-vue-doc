@@ -34,6 +34,7 @@ export default {
     'prismjs/plugins/line-numbers/prism-line-numbers.css',
     'prismjs/plugins/toolbar/prism-toolbar.css',
     '~sass/variables.scss',
+    '~sass/style.scss',
     'prismjs/themes/prism-tomorrow.css',
   ],
 
