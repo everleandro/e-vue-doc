@@ -6,9 +6,9 @@
         <e-list-item to="/" exact>Getting started</e-list-item>
         <e-list-item to="/buttons">Butons</e-list-item>
         <e-list-item to="/checkbox">Checkboxes</e-list-item>
+        <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
         <e-list-item to="/dialogs">Dialogs</e-list-item>
         <e-list-item to="/slider">Slider</e-list-item>
-        <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
       </e-list>
     </e-drawer>
 

@@ -12,13 +12,17 @@
     />
   </svg>
   -->
-    <e-row align="center">
-      <e-col cols="auto">
-        <img src="~/static/e-vue.png" alt="EV" width="100" />
-      </e-col>
-    </e-row>
+  <e-row align="center" no-gutters>
+    <e-col cols="auto">
+      <img src="~/static/e-vue.png" alt="EV" height="64" />
+    </e-col>
+  </e-row>
 </template>
-
+<script>
+export default {
+  name: 'NuxtLogo',
+}
+</script>
 <style>
 .nuxt-logo {
   height: 64px;
