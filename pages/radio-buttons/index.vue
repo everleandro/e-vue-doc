@@ -8,6 +8,9 @@
     </p>
     <radio-buttons-usage />
     <radio-buttons-colors />
+    <radio-buttons-direction />
+    <radio-buttons-api-group />
+    <radio-buttons-api-radio />
   </div>
 </template>
 

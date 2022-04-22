@@ -1,15 +1,8 @@
 <template>
   <e-container class="px-0" fluid>
-    <h2 class="v-heading text-h2 text-sm-h3 mb-4">Usage</h2>
-    <p>
-      Although v-radio can be used on its own, it is best used in conjunction
-      with v-radio-group. Using the v-model on the v-radio-group you can access
-      the value of the selected radio button inside the group.
-    </p>
-    <app-box>
+    <app-box title="Usage">
       <!-- Diseño de juego a mostrar -->
-      <template #default>
-        <e-row>
+      <e-row>
           <e-col col="24" md="12" lg="12" xl="12">
             <e-radio-group v-model="radioGroup">
               <e-radio
@@ -21,8 +14,7 @@
               ></e-radio>
             </e-radio-group>
           </e-col>
-        </e-row>
-      </template>
+      </e-row>
       <!-- Códígo ejemplo de un fichero completo -->
       <template #code>
         <div>
@@ -51,33 +43,6 @@
               </div>
             </e-col>
           </e-row>
-          <div>
-            <div v-prism="{class:'language-javascript', dataStart:'20'}">
-              <script type="prism-javascript">
-<script>
-  import Vue from 'vue'
-  export default Vue.extend({
-    name: 'usage',
-    data: () => ({
-    radioGroup: 1,
-    }),
-  })
-<script>
-              </script>
-            </div>
-          </div>
-        </div>
-      </template>
-      <!-- Fragmento de códígo con componente y sus props en cuestión -->
-      <template #example>
-        <div v-prism>
-          <script type="prism-html-markup">
-<e-radio
-color="primary"
-label="Radio 1"
->
-</e-radio>
-          </script>
         </div>
       </template>
     </app-box>

@@ -1,4 +1,5 @@
 <template>
+  <!--
   <svg
     class="nuxt-logo py-1 px-4"
     viewBox="0 0 45 30"
@@ -10,6 +11,12 @@
       fill="#00DC82"
     />
   </svg>
+  -->
+    <e-row align="center">
+      <e-col cols="auto">
+        <img src="~/static/e-vue.png" alt="EV" width="100" />
+      </e-col>
+    </e-row>
 </template>
 
 <style>
