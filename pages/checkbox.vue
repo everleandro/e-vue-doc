@@ -8,6 +8,11 @@
     <e-row>
       <checkbox-usage />
       <checkbox-colors />
+      <checkbox-states />
+      <e-col col="24">
+        <h2>Props</h2>
+      </e-col>
+      <checkbox-api />
     </e-row>
   </div>
 </template>

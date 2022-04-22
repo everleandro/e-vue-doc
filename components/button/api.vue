@@ -29,7 +29,7 @@
           <tr>
             <td><b>color</b></td>
             <td>string</td>
-            <td>undefined</td>
+            <td>primary</td>
             <td>
               Applies specified color to the control - accept the name defined
               in color list into theme.scss file

@@ -12,9 +12,11 @@
       </div>
     </e-bar>
     <hr v-if="subtitle" class="e-divider" />
-    <p v-if="subtitle" class="pa-4 code-box__subtitle ma-0">
-      {{ subtitle }}
-    </p>
+    <p
+      v-if="subtitle"
+      class="pa-4 code-box__subtitle ma-0"
+      v-html="subtitle"
+    ></p>
     <hr class="e-divider" />
     <e-expand-transition>
       <div v-if="showCode" class="code-box__code">

@@ -84,7 +84,7 @@ import { EVue } from '@ever.leandros91/e-vue'
 Vue.use(EVue)
     </div>
     <p>
-      Then add sass/theme.scss ato your
+      Then add sass/theme.scss to your
       <code class="code-line">vue.config.js</code>:
     </p>
     <!-- prettier-ignore -->

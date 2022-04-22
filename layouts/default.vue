@@ -5,8 +5,8 @@
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
         <e-list-item to="/buttons">Butons</e-list-item>
+        <e-list-item to="/checkbox">Checkboxes</e-list-item>
         <e-list-item to="/dialogs">Dialogs</e-list-item>
-        <e-list-item to="/checkbox">Checkbox</e-list-item>
         <e-list-item to="/slider">Slider</e-list-item>
         <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
       </e-list>
@@ -42,11 +42,17 @@ export default Vue.extend({
 </script>
 <style lang="scss">
 .e-app {
+  .e-drawer {
+    position: fixed !important;
+  }
   .flex-grow-1 {
     flex-grow: 1;
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .e-main__wrapper {
+    overflow: auto;
   }
   .box {
     display: flex;
