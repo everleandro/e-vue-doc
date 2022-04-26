@@ -3,7 +3,7 @@
     <e-col col="24">
       <h2 class="v-heading text-h3 text-sm-h3 mb-4">Api e-radio-group</h2>
       <section>
-        <table>
+        <table class="api-table">
           <thead>
             <tr>
               <th>Name</th>
@@ -14,48 +14,54 @@
           </thead>
           <tbody>
             <tr>
-              <td class="primary--text"><b>column</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">true</td>
-              <td>Displays radio buttons in column</td>
+              <td><b>row</b></td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Displays radio buttons in row</td>
             </tr>
             <tr>
-              <td class="primary--text"><b>disabled</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">false</td>
+              <td><b>disabled</b></td>
+              <td>boolean</td>
+              <td>false</td>
               <td>Disable the input</td>
             </tr>
             <tr>
-              <td class="primary--text"><b>mandatory</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">false</td>
-              <td>Forces a value to always be selected (if available).</td>
+              <td><b>detail</b></td>
+              <td>String</td>
+              <td>null</td>
+              <td>displays a text message below the component</td>
             </tr>
             <tr>
-              <td class="primary--text"><b>max</b></td>
-              <td class="secondary--text">number | string</td>
-              <td class="info--text">undefined</td>
-              <td>Sets a maximum number of selections that can be made.</td>
-            </tr>
-            <tr>
-              <td class="primary--text"><b>multiple</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">false</td>
+              <td><b>dense</b></td>
+              <td>boolean</td>
+              <td>false</td>
               <td>
-                Allow multiple selections. The value prop must be an array.
+                Apply <code class="code-line">display:none</code> to Hint text
               </td>
             </tr>
             <tr>
-              <td class="primary--text"><b>readonly</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">false</td>
+              <td><b>readonly</b></td>
+              <td>boolean</td>
+              <td>false</td>
               <td>Puts input in readonly state</td>
             </tr>
             <tr>
-              <td class="primary--text"><b>row</b></td>
-              <td class="secondary--text">boolean</td>
-              <td class="info--text">false</td>
-              <td>Displays radio buttons in row</td>
+              <td>mandatory</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Forces a value to always be selected (if available).</td>
+            </tr>
+            <tr>
+              <td><b>rules</b></td>
+              <td>array</td>
+              <td>[ ]</td>
+              <td>
+                Accepts a mixed array of types function, boolean and string.
+                Functions pass an input value as an argument and must return
+                either true / false or a string containing an error message. The
+                input field will enter an error state if a function returns (or
+                any value in the array contains) false or is a string
+              </td>
             </tr>
           </tbody>
         </table>

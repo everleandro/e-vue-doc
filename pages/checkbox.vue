@@ -6,6 +6,11 @@
       between two distinct values.
     </p>
     <e-row>
+      <e-col col="24">
+        <h3>Local use</h3>
+        <!-- prettier-ignore -->
+        <div v-prism="{ class: 'language-javascript' }">import { ECheckbox } from '@ever.leandros91/e-vue'</div>
+      </e-col>
       <checkbox-usage />
       <checkbox-colors />
       <checkbox-states />
