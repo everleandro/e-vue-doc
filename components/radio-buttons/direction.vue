@@ -38,34 +38,27 @@
               <div v-prism>
                 <script type="prism-html-markup">
 <template>
-  <e-container fluid>
-     <e-row>
-        <e-col col="24" md="12" lg="12" xl="12">
-          <e-radio-group v-model="radioGroupCol">
-            <e-radio
-                              v-for="n in 3"
-                              :key="n"
-                              :label="`Radio ${n}`"
-                              :input-value="n"
-                              color="primary"
-                        ></e-radio>
-          </e-radio-group>
-        </e-col>
-      </e-row>
-      <e-row>
-        <e-col col="24" md="12" lg="12" xl="12">
-          <e-radio-group v-model="radioGroupRow" row>
-            <e-radio
-                              v-for="n in 3"
-                              :key="n"
-                              :label="`Radio ${n}`"
-                              :input-value="n"
-                              color="primary"
-                        ></e-radio>
-          </e-radio-group>
-        </e-col>
-      </e-row>
-  </e-container>
+  <div>
+    <e-radio-group v-model="radioGroupCol">
+      <e-radio
+                  v-for="n in 3"
+                  :key="n"
+                  :label="`Radio ${n}`"
+                  :input-value="n"
+                  color="primary"
+            ></e-radio>
+    </e-radio-group>
+
+    <e-radio-group v-model="radioGroupRow" row>
+      <e-radio
+                  v-for="n in 3"
+                  :key="n"
+                  :label="`Radio ${n}`"
+                  :input-value="n"
+                  color="primary"
+            ></e-radio>
+    </e-radio-group>
+  </div>
 </template>
                 </script>
               </div>

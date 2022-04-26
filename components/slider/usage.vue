@@ -63,7 +63,7 @@ export default {
   name: 'SliderUsage',
   data: () => ({
     disabled: false,
-    selectedColor: undefined,
+    selectedColor: 'primary',
     trackColor: null,
     thumbColor: null,
     sliderModel: 10,

@@ -23,21 +23,15 @@
               <div v-prism>
                 <script type="prism-html-markup">
 <template>
-  <e-container fluid>
-         <e-row>
-               <e-col col="24" md="12" lg="12" xl="12">
-                   <e-radio-group v-model="selectedColor">
-                        <e-radio
-                                                     v-for="color in colors"
-                                                     :key="color"
-                                                     :color="color"
-                                                     :input-value="color"
-                                                     :label="color"
-                                                  />
-                   </e-radio-group>
-               </e-col>
-         </e-row>
-  </e-container>
+  <e-radio-group v-model="selectedColor">
+      <e-radio
+                 v-for="color in colors"
+                 :key="color"
+                 :color="color"
+                 :input-value="color"
+                 :label="color"
+              />
+  </e-radio-group>
 </template>
                 </script>
               </div>

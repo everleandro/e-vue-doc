@@ -76,42 +76,9 @@
         :persistant="persist"
         :fullscreen="fullscreen"
     >
-      &lt;e-row no-gutters>
-        &lt;e-col col="24">
-          &lt;h1 class="px-4">Title&lt;/h1>
-        &lt;/e-col>
-        &lt;e-col col="24">
-          &lt;p class="pa-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Veniam, deleniti, quia est non repudiandae, quisquam quibusdam
-            suscipit soluta amet asperiores perspiciatis dignissimos
-            maxime necessitatibus eius corporis? Quam tempora
-            exercitationem ipsam?
-          &lt;/p>
-        &lt;/e-col>
-        &lt;e-col col="12">
-          &lt;e-button
-                          block
-                          color="primary"
-                          @click="dialogModel = false"
-                        >
-            accept
-          &lt;/e-button>
-        &lt;/e-col>
-      &lt;/e-row>
+
   &lt;/e-dialog>
 &lt;/template></div>
-        <!-- prettier-ignore -->
-        <div v-prism>&lt;script>
-export default {
-  name: 'CheckboxUsage',
-  data: () => ({
-    model: false,
-    trueValue: true,
-    falseValue: false,
-  }),
-}
-          &lt;/script></div>
       </template>
     </app-box>
   </e-col>

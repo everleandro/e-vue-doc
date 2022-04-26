@@ -3,7 +3,7 @@
     <e-drawer v-model="val" nav>
       <div class="d-flex justify-space-between align-center">
         <logo />
-        <span class="pa-4 e-label">v0.1.64</span>
+        <span class="pa-4 e-label">v0.1.65</span>
       </div>
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>

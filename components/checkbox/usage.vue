@@ -40,20 +40,9 @@
         v-model="model"
         :true-value="trueValue"
         :false-value="falseValue"
-        :label="'label : ' + model"
+        :label="`label : ${model}`"
   />
 &lt;/template></div>
-        <!-- prettier-ignore -->
-        <div v-prism="'language-javascript'">&lt;script>
-  export default {
-    name: 'CheckboxUsage',
-    data: () => ({
-      model: false,
-      trueValue: true,
-      falseValue: false,
-    }),
-  }
-&lt;/script></div>
       </template>
     </app-box>
   </e-col>
