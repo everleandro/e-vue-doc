@@ -35,24 +35,24 @@
       </e-row>
       <template #code>
         <!-- prettier-ignore -->
-        <div v-prism="'language-javascript'">&lt;template>
+        <div v-prism>&lt;template>
   &lt;e-checkbox
-    v-model="model"
-    :true-value="trueValue"
-    :false-value="falseValue"
-    :label="'label : ' + model"
+        v-model="model"
+        :true-value="trueValue"
+        :false-value="falseValue"
+        :label="'label : ' + model"
   />
 &lt;/template></div>
         <!-- prettier-ignore -->
-        <div v-prism>&lt;script>
-    export default {
-      name: 'CheckboxUsage',
-      data: () => ({
-        model: false,
-        trueValue: true,
-        falseValue: false,
-      }),
-    }
+        <div v-prism="'language-javascript'">&lt;script>
+  export default {
+    name: 'CheckboxUsage',
+    data: () => ({
+      model: false,
+      trueValue: true,
+      falseValue: false,
+    }),
+  }
 &lt;/script></div>
       </template>
     </app-box>
