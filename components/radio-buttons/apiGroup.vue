@@ -23,25 +23,19 @@
               <td class="primary--text"><b>disabled</b></td>
               <td class="secondary--text">boolean</td>
               <td class="info--text">false</td>
-              <td>
-                Disable the input
-              </td>
+              <td>Disable the input</td>
             </tr>
             <tr>
               <td class="primary--text"><b>mandatory</b></td>
               <td class="secondary--text">boolean</td>
               <td class="info--text">false</td>
-              <td>
-                Forces a value to always be selected (if available).
-              </td>
+              <td>Forces a value to always be selected (if available).</td>
             </tr>
             <tr>
               <td class="primary--text"><b>max</b></td>
               <td class="secondary--text">number | string</td>
               <td class="info--text">undefined</td>
-              <td>
-                Sets a maximum number of selections that can be made.
-              </td>
+              <td>Sets a maximum number of selections that can be made.</td>
             </tr>
             <tr>
               <td class="primary--text"><b>multiple</b></td>
@@ -55,19 +49,14 @@
               <td class="primary--text"><b>readonly</b></td>
               <td class="secondary--text">boolean</td>
               <td class="info--text">false</td>
-              <td>
-                Puts input in readonly state
-              </td>
+              <td>Puts input in readonly state</td>
             </tr>
             <tr>
               <td class="primary--text"><b>row</b></td>
               <td class="secondary--text">boolean</td>
               <td class="info--text">false</td>
-              <td>
-                Displays radio buttons in row
-              </td>
+              <td>Displays radio buttons in row</td>
             </tr>
-
           </tbody>
         </table>
       </section>
@@ -77,7 +66,7 @@
 
 <script>
 export default {
-  name: 'ButtonApi',
+  name: 'RadioButtonsApiGroup',
 }
 </script>
 

@@ -59,7 +59,7 @@
 
 <script>
 export default {
-  name: 'ButtonApi',
+  name: 'RadioButtonsApiRadio',
 }
 </script>
 
