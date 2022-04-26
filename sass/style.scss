@@ -38,6 +38,9 @@ table {
         font-weight: bold;
         white-space: nowrap;
       }
+      & > td:nth-child(2) {
+        white-space: nowrap;
+      }
       & > td:nth-child(3) {
         color: #2196f3;
       }

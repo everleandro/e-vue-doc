@@ -1,6 +1,7 @@
 <template>
   <div class="getting-started">
     <h1 class="">Setup</h1>
+    <app-alert></app-alert>
     <h2 class="">Install</h2>
     <hr class="e-divider" />
     <p>
@@ -39,18 +40,17 @@ $colors: (
     <h2>Setting Nuxt app</h2>
     <hr class="e-divider" />
 
-    <h3>Install Globally</h3>
+    <h3>Install</h3>
     <p>
       inside plugins folder
       <code class="code-line">plugins/e-vue.js</code>:
     </p>
     <!-- prettier-ignore -->
-    <div v-prism="{ class: 'language-javascript' }">//plugins/e-vue.js
+    <div v-prism="{ class: 'language-javascript' }">// plugins/e-vue.js
 
+// this file is required only if you want to install all available components and directives
 import Vue from 'vue'
 import { EVue } from '@ever.leandros91/e-vue'
-
-// this line automatically imports all components and directives
 Vue.use(EVue)
     </div>
 
@@ -67,7 +67,7 @@ Vue.use(EVue)
 plugins: [ 'plugins/e-vue' ],</div>
     <h2>Setting Vue app</h2>
     <hr class="e-divider" />
-    <h3>Install Globally</h3>
+    <h3>Install</h3>
     <p>
       inside
       <code class="code-line">src/main.ts</code> or
@@ -75,12 +75,12 @@ plugins: [ 'plugins/e-vue' ],</div>
     </p>
     <!-- prettier-ignore -->
     <div v-prism="{ class: 'language-javascript' }">// src/main
-
+// this line is mandatory
 import "@ever.leandros91/e-vue/dist/e-vue.css";
+
+// the following lines are required only if you want to install all available components and directives
 import Vue from 'vue'
 import { EVue } from '@ever.leandros91/e-vue'
-
-// this line automatically imports all components and directives
 Vue.use(EVue)
     </div>
     <p>
@@ -93,8 +93,8 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: `
         // This is the path to your theme file
+        prependData: `
         @import "@/sass/theme.scss";
         `,
       }
@@ -130,6 +130,5 @@ export default Vue.extend({
   pre {
     border-radius: 5px;
   }
-
 }
 </style>

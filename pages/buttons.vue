@@ -7,6 +7,11 @@
       can be used to alter the background or text color.
     </p>
     <e-row>
+      <e-col col="24">
+        <h3>Local use</h3>
+        <!-- prettier-ignore -->
+        <div v-prism="{ class: 'language-javascript' }">import { EButton } from '@ever.leandros91/e-vue'</div>
+      </e-col>
       <button-usage />
       <button-basic />
       <button-colors />

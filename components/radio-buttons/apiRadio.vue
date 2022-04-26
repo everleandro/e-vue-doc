@@ -1,9 +1,9 @@
 <template>
   <e-row>
     <e-col col="24">
-      <h2 class="v-heading text-h3 text-sm-h3 mb-4">Api e-radio</h2>
+      <h2 class="mb-4">Api e-radio</h2>
       <section>
-        <table>
+        <table class="api-table">
           <thead>
             <tr>
               <th>Name</th>
@@ -14,13 +14,12 @@
           </thead>
           <tbody>
             <tr>
-              <td class="primary--text"><b>color</b></td>
-              <td class="secondary--text">string</td>
-              <td class="info--text">undefined</td>
+              <td><b>color</b></td>
+              <td>string</td>
+              <td>primary</td>
               <td>
-                Applies specified color to the control - it can be the name of
-                material color (for example success or purple) or css color
-                (#033 or rgba(255, 0, 0, 0.5)).
+                Applies specified color to the control - accept the name defined
+                in color list into theme.scss file
               </td>
             </tr>
             <tr>
@@ -29,6 +28,7 @@
               <td class="info--text">false</td>
               <td>Removes the ability to click or target the component.</td>
             </tr>
+
             <tr>
               <td class="primary--text"><b>label</b></td>
               <td class="secondary--text">string</td>
@@ -42,13 +42,10 @@
               <td>Puts input in readonly state</td>
             </tr>
             <tr>
-              <td class="primary--text"><b>value</b></td>
+              <td class="primary--text"><b>inputValue</b></td>
               <td class="secondary--text">any</td>
               <td class="info--text">undefined</td>
-              <td>
-                The value used when the component is selected in a group. If not
-                provided, the index will be used.
-              </td>
+              <td>The input’s value</td>
             </tr>
           </tbody>
         </table>

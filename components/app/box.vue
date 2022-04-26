@@ -6,7 +6,7 @@
         :class="title ? 'justify-space-between' : 'justify-end'"
       >
         <span class="code-box__title">{{ title }}</span>
-        <e-button icon @click="showCode = !showCode">
+        <e-button v-if="hasCode" icon @click="showCode = !showCode">
           <e-icon>mdi mdi-code-tags</e-icon>
         </e-button>
       </div>
@@ -19,7 +19,7 @@
     ></p>
     <hr class="e-divider" />
     <e-expand-transition>
-      <div v-if="showCode" class="code-box__code">
+      <div v-show="showCode" class="code-box__code">
         <slot name="code"></slot>
       </div>
     </e-expand-transition>
@@ -43,6 +43,11 @@ export default Vue.extend({
   data: () => ({
     showCode: false,
   }),
+  computed: {
+    hasCode() {
+      return !!this.$slots.code
+    },
+  },
 })
 </script>
 

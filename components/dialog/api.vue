@@ -34,7 +34,7 @@
           </tr>
           <tr>
             <td>maxWidth</td>
-            <td>String | Number</td>
+            <td>string | number</td>
             <td>null</td>
             <td>Sets the maximum width for the component.</td>
           </tr>

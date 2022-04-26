@@ -1,7 +1,10 @@
 <template>
   <e-app>
     <e-drawer v-model="val" nav>
-      <logo />
+      <div class="d-flex justify-space-between align-center">
+        <logo />
+        <span class="pa-4 e-label">v0.1.64</span>
+      </div>
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
         <e-list-item to="/buttons">Butons</e-list-item>
