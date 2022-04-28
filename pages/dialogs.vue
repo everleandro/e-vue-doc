@@ -17,10 +17,6 @@
         <h2>Props</h2>
       </e-col>
       <dialog-api />
-      <e-col col="24">
-        <h2>SASS Variables</h2>
-      </e-col>
-      <dialog-sass />
     </e-row>
   </div>
 </template>

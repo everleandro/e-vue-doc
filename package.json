@@ -15,7 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ever.leandros91/e-vue": "^0.1.65",
+    "@ever.leandros91/e-vue": "file:ever.leandros91-e-vue-0.1.65.tgz",
     "@mdi/font": "^6.5.95",
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",

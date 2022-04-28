@@ -10,7 +10,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>$btn-border-radius</td>
+            <td>$text-field-border-radius:</td>
             <td>
               <span class="primary--text">$border-radius-root</span>
               <span class="info--text">!default;</span>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'DialogSass',
+  name: 'TextFieldSass',
 }
 </script>
 

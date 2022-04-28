@@ -32,7 +32,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'DefaultLayout',
   data: () => ({}),
 })
 </script>
