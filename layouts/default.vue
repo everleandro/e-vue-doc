@@ -11,8 +11,9 @@
         <e-list-item to="/checkbox">Checkboxes</e-list-item>
         <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
         <e-list-item to="/text-field">Text field</e-list-item>
-        <e-list-item to="/dialogs">Dialogs</e-list-item>
         <e-list-item to="/slider">Slider</e-list-item>
+        <e-list-item to="/form">Forms</e-list-item>
+        <e-list-item to="/dialogs">Dialogs</e-list-item>
       </e-list>
     </e-drawer>
 
