@@ -1,5 +1,5 @@
 <template>
-  <e-container class="px-0" fluid>
+  <e-col col="24">
     <app-box title="Colors">
       <!-- Diseño de juego a mostrar -->
       <e-row>
@@ -40,7 +40,7 @@
         </div>
       </template>
     </app-box>
-  </e-container>
+  </e-col>
 </template>
 
 <script>

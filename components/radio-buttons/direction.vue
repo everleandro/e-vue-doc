@@ -1,5 +1,5 @@
 <template>
-  <div class="px-0">
+  <e-col col="24">
     <app-box title="Direction">
       <!-- Diseño de juego a mostrar -->
       <e-row>
@@ -67,7 +67,7 @@
         </div>
       </template>
     </app-box>
-  </div>
+  </e-col>
 </template>
 
 <script>

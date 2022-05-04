@@ -7,13 +7,14 @@
       </div>
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
-        <e-list-item to="/buttons">Butons</e-list-item>
+        <e-list-item to="/buttons">Buttons</e-list-item>
         <e-list-item to="/checkbox">Checkboxes</e-list-item>
         <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
-        <e-list-item to="/text-field">Text field</e-list-item>
-        <e-list-item to="/slider">Slider</e-list-item>
+        <e-list-item to="/text-field">Text fields</e-list-item>
+        <e-list-item to="/slider">Sliders</e-list-item>
         <e-list-item to="/form">Forms</e-list-item>
         <e-list-item to="/dialogs">Dialogs</e-list-item>
+        <e-list-item to="/select">Selects</e-list-item>
       </e-list>
     </e-drawer>
 
