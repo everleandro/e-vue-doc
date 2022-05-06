@@ -7,20 +7,18 @@
           lg="12"
           class="d-flex justify-center align-center br-divider pa-4"
         >
-          <e-text-field
+          <e-select
             label="default"
+            :items="selectItems"
             :color="selectedColor.value"
             :prepend-icon="selectedPrependIcon.value"
             :append-icon="selectedAppendIcon.value"
             :disabled="disabled"
             :clearable="clearable"
-            :detail="detail"
-            :limit="limit > 0 ? limit : null"
-            :counter="counter"
             :readonly="readonly"
             :dense="dense"
             :outlined="outlined"
-          ></e-text-field>
+          ></e-select>
         </e-col>
         <hr class="e-divider e-divider--vertical" />
         <e-col col="24" lg="6">
@@ -51,36 +49,33 @@
         <e-col col="24" lg="6">
           <div class="pa-4">
             <e-checkbox v-model="disabled" dense label="disabled"></e-checkbox>
-            <e-checkbox v-model="clearable" dense label="clearable"></e-checkbox>
             <e-checkbox v-model="dense" dense label="dense"></e-checkbox>
-            <e-checkbox v-model="counter" dense label="counter"></e-checkbox>
+            <e-checkbox
+              v-model="clearable"
+              dense
+              label="clearable"
+            ></e-checkbox>
             <e-checkbox v-model="outlined" dense label="outlined"></e-checkbox>
             <e-checkbox v-model="readonly" dense label="readonly"></e-checkbox>
-            <e-slider
-              v-model="limit"
-              label="limit"
-              class="mt-10"
-              :max="10"
-            ></e-slider>
           </div>
         </e-col>
       </e-row>
       <template #code>
         <!-- prettier-ignore -->
         <div v-prism>&lt;template>
-    &lt;e-text-field
+    &lt;e-select
+              v-model="selectModel"
               label="default"
+              :items="items"
               :color="color"
               :prepend-icon="prependIcon"
               :append-icon="appendIcon"
-              :clearable="clearable"
               :disabled="disabled"
-              :limit="limit"
-              :counter="counter"
+              :clearable="clearable"
               :readonly="readonly"
               :dense="dense"
               :outlined="outlined"
-    >&lt;/e-text-field>
+    >&lt;/e-select>
 &lt;/template></div>
       </template>
     </app-box>
@@ -91,11 +86,11 @@
 export default {
   name: 'TextFieldUsage',
   data: () => ({
-    limit: 10,
     detail: 'text message!!',
     selectedColor: { label: 'default', value: undefined },
     selectedPrependIcon: { label: 'none', value: null },
     selectedAppendIcon: { label: 'none', value: null },
+    selectItems: ['item 1', 'item 2', 'item 3', 'item 4'],
     colors: [
       { label: 'success', value: 'success' },
       { label: 'secondary', value: 'secondary' },
@@ -109,10 +104,9 @@ export default {
       { label: 'none', value: undefined },
     ],
     disabled: false,
-    clearable: false,
     readonly: false,
-    counter: false,
     dense: false,
+    clearable: false,
     outlined: true,
   }),
 }

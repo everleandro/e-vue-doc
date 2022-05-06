@@ -3,7 +3,7 @@
     <e-drawer v-model="val" nav>
       <div class="d-flex justify-space-between align-center">
         <logo />
-        <span class="pa-4 e-label">v0.1.65</span>
+        <span class="pa-4 e-label">v0.1.73</span>
       </div>
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
@@ -11,6 +11,7 @@
         <e-list-item to="/checkbox">Checkboxes</e-list-item>
         <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
         <e-list-item to="/text-field">Text field</e-list-item>
+        <e-list-item to="/select">Select</e-list-item>
         <e-list-item to="/slider">Slider</e-list-item>
         <e-list-item to="/form">Forms</e-list-item>
         <e-list-item to="/dialogs">Dialogs</e-list-item>

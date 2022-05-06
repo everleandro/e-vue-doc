@@ -1,5 +1,8 @@
 <template>
   <div class="getting-started">
+    <div>
+
+    </div>
     <h1 class="">Setup</h1>
     <app-alert></app-alert>
     <h2 class="">Install</h2>
