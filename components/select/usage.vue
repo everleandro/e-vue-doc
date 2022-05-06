@@ -16,6 +16,7 @@
             :disabled="disabled"
             :clearable="clearable"
             :readonly="readonly"
+            :detail="detail"
             :dense="dense"
             :outlined="outlined"
           ></e-select>
