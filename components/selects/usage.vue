@@ -3,16 +3,17 @@
     <app-box title="Usage">
       <!-- Diseño de juego a mostrar -->
       <e-row>
-        <e-col col="24" md="12" lg="12" xl="12">
-          <e-radio-group v-model="radioGroup">
-            <e-radio
-              v-for="n in 3"
-              :key="n"
-              :label="`Radio ${n}`"
-              :input-value="n"
-              color="primary"
-            ></e-radio>
-          </e-radio-group>
+        <e-col xs="24" md="6" lg="6" xl="6">
+          <e-select :items="items" label="Standard"></e-select>
+        </e-col>
+        <e-col xs="24" md="6" lg="6" xl="6">
+          <e-select :items="items" outlined label="outlined"></e-select>
+        </e-col>
+        <e-col xs="24" md="6" lg="6" xl="6">
+          <e-select :items="items" clearable label="clearable"></e-select>
+        </e-col>
+        <e-col xs="24" md="6" lg="6" xl="6">
+          <e-select :items="items" dense label="dense"></e-select>
         </e-col>
       </e-row>
       <!-- Códígo ejemplo de un fichero completo -->
@@ -25,13 +26,10 @@
                 <script type="prism-html-markup">
 <template>
   <e-radio-group v-model="radioGroup">
-      <e-radio
-                   v-for="n in 3"
-                   :key="n"
-                   :label="`Radio ${n}`"
-                   :input-value="n"
-                >
-      </e-radio>
+      <e-select
+            :items="items"
+            label="Standard"
+          ></e-select>
   </e-radio-group>
 </template>
                 </script>
@@ -49,7 +47,7 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'usage',
   data: () => ({
-    radioGroup: 1,
+    items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
   }),
 })
 </script>

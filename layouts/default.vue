@@ -7,7 +7,7 @@
       </div>
       <e-list>
         <e-list-item to="/" exact>Getting started</e-list-item>
-        <e-list-item to="/buttons">Butons</e-list-item>
+        <e-list-item to="/buttons">Buttons</e-list-item>
         <e-list-item to="/checkbox">Checkboxes</e-list-item>
         <e-list-item to="/radio-buttons">Radio buttons</e-list-item>
         <e-list-item to="/text-field">Text field</e-list-item>

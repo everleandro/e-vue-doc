@@ -1,6 +1,5 @@
 <template>
-  <e-row>
-    <e-col col="24">
+  <e-col col="24">
       <h2 class="mb-4">Api e-radio</h2>
       <section>
         <table class="api-table">
@@ -51,7 +50,6 @@
         </table>
       </section>
     </e-col>
-  </e-row>
 </template>
 
 <script>
