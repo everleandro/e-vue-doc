@@ -14,7 +14,7 @@
       <selects-usage />
       <selects-disabled />
       <selects-readonly />
-      <selects-api-select />
+      <selects-api />
     </e-row>
   </div>
 </template>
