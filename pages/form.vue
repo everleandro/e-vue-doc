@@ -18,6 +18,7 @@
         <div v-prism="{ class: 'language-javascript' }">import { EForm } from '@ever.leandros91/e-vue'</div>
       </e-col>
       <forms-usage />
+      <forms-grid />
       <forms-internal-methods />
       <forms-lazy />
       <e-col col="24">
