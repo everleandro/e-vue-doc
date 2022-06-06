@@ -6,7 +6,7 @@
     >
       <e-form ref="form" v-model="valid" :lazy="false">
         <e-text-field
-          v-moDel="name"
+          v-model="name"
           label="name"
           :rules="[requiredRule]"
           outlined
@@ -36,7 +36,7 @@
         <div v-prism>&lt;template>
   &lt;e-form ref="form" v-model="valid" :lazy="false">
     &lt;e-text-field
-            v-moDel="name"
+            v-model="name"
             label="name"
             :rules="[requiredRule]"
             outlined

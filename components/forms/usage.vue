@@ -2,37 +2,30 @@
   <e-col col="24" class="buttons-page-usage">
     <app-box title="Usage">
       <e-form v-model="valid">
-        <e-row>
-          <e-col col="24" md="12" lg="8">
-            <e-text-field
-              v-model="firstname"
-              outlined
-              label="first name"
-              :rules="[requiredRule]"
-              counter
-              :limit="10"
-            ></e-text-field>
-          </e-col>
-          <e-col col="24" md="12" lg="8">
-            <e-text-field
-              v-model="lastname"
-              outlined
-              label="last name"
-              :rules="[requiredRule]"
-              counter
-              :limit="10"
-            ></e-text-field>
-          </e-col>
-          <e-col col="24" lg="8">
-            <e-text-field
-              v-model="email"
-              outlined
-              type="email"
-              label="email"
-              :rules="[emailRule]"
-            ></e-text-field>
-          </e-col>
-        </e-row>
+        <e-text-field
+          v-model="firstname"
+          label="first name"
+          :rules="[requiredRule]"
+          counter
+          outlined
+          :limit="10"
+        ></e-text-field>
+
+        <e-text-field
+          v-model="lastname"
+          label="last name"
+          :rules="[requiredRule]"
+          counter
+          outlined
+        ></e-text-field>
+
+        <e-text-field
+          v-model="email"
+          outlined
+          type="email"
+          label="email"
+          :rules="[emailRule]"
+        ></e-text-field>
       </e-form>
       <template #code>
         <!-- prettier-ignore -->
@@ -41,28 +34,30 @@
     &lt;e-row>
       &lt;e-col col="24" md="12" lg="8">
         &lt;e-text-field
-                      outlined
+                      v-model="firstname"
                       label="first name"
-                      :rules="[required]"
+                      :rules="[requiredRule]"
                       counter
+                      outlined
                       :limit="10"
                 >&lt;/e-text-field>
       &lt;/e-col>
       &lt;e-col col="24" md="12" lg="8">
         &lt;e-text-field
-                      outlined
+                      v-model="lastname"
                       label="last name"
-                      :rules="[required]"
+                      :rules="[requiredRule]"
                       counter
-                      :limit="10"
+                      outlined
                 >&lt;/e-text-field>
       &lt;/e-col>
       &lt;e-col col="24" lg="8">
         &lt;e-text-field
+                      v-model="email"
                       outlined
-                      type="text"
-                      label="last name"
-                      :rules="[email]"
+                      type="email"
+                      label="email"
+                      :rules="[emailRule]"
                 >&lt;/e-text-field>
       &lt;/e-col>
     &lt;/e-row>

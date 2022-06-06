@@ -8,13 +8,13 @@
     >
       <e-form v-model="valid" ref="form">
         <e-text-field
-          v-moDel="name"
+          v-model="name"
           label="name"
           :rules="[requiredRule]"
           outlined
         ></e-text-field>
         <e-text-field
-          v-mocel="email"
+          v-model="email"
           label="email"
           :rules="[emailRule, requiredRule]"
           outlined
@@ -30,6 +30,7 @@
           v-model="agree"
           :rules="[agreeRule]"
           label="Do you agree?"
+          :outlined="false"
         ></e-checkbox>
         <div class="d-flex">
           <e-button
